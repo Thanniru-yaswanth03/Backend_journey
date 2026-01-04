@@ -153,3 +153,34 @@
 //consţarrays
 const arr=[1,2,3,4];
 console.log(arr);
+// Nested array (2D array)
+let matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+// Accessing elements
+console.log(matrix[0][0]); // 1
+console.log(matrix[1][2]); // 6
+
+// Modifying an element
+matrix[2][1] = 99;
+
+// Loop through nested array
+for (let i = 0; i < matrix.length; i++) {
+  for (let j = 0; j < matrix[i].length; j++) {
+    console.log(matrix[i][j]);
+  }
+}
+
+// Add a new row
+matrix.push([10, 11, 12]);
+
+// Add element to an inner array
+matrix[0].push(100);
+
+// Flatten nested array
+let flat = matrix.flat();
+console.log(flat);
+
